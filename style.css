@@ -1,0 +1,144 @@
+/* Set the colours and spacing used throughout the page */
+:root {
+  font-family: Arial, sans-serif;
+  color: #18302b;
+  background: #f3f7f5;
+}
+
+/* Make widths and padding easier to manage */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  padding: 1.25rem 6%;
+  background: #123c35;
+  color: white;
+}
+
+.site-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header p,
+footer p {
+  margin-bottom: 0;
+}
+
+main {
+  width: min(100% - 2rem, 900px);
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 1.25rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #d8e5df;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgb(18 60 53 / 6%);
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+h1 {
+  color: #123c35;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+h2 {
+  color: #176657;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid #9eb6ad;
+  border-radius: 7px;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+
+select:disabled {
+  background: #edf1ef;
+  color: #687671;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 7px;
+  background: #176657;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #104b40;
+}
+
+button:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid #edaa35;
+  outline-offset: 3px;
+}
+
+#module-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+/* Lesson notes and module quizzes */
+.module-button { width: 100%; text-align: left; }
+.lesson-introduction { font-size: 1.05rem; }
+.lesson-topic { margin: 1.25rem 0; padding: 1rem; border-left: 4px solid #176657; background: #f7faf8; border-radius: 6px; }
+.lesson-topic h4 { margin-top: 0; color: #123c35; }
+.lesson-topic h5 { margin-bottom: 0.25rem; color: #176657; }
+.lesson-topic details { margin-top: 0.8rem; }
+.lesson-topic summary { color: #104b40; font-weight: bold; cursor: pointer; }
+.quiz-question { margin: 1rem 0; padding: 1rem; border: 1px solid #d8e5df; border-radius: 8px; }
+.quiz-question legend { padding: 0 0.35rem; font-weight: bold; }
+.quiz-choice { display: block; margin: 0.6rem 0; font-weight: normal; }
+.quiz-choice input { margin-right: 0.4rem; }
+.correct-answer { color: #17613b; margin: 0.5rem 0; }
+.incorrect-answer { color: #9a352b; margin: 0.5rem 0; }
+#quiz-result { font-weight: bold; }

@@ -1,0 +1,1828 @@
+const courseCatalog = [
+  {
+    faculty: "Engineering",
+    programmes: [
+      {
+        name: "Bachelor of Engineering in Chemical and Processing Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "CHEP101 — Principles of Chemical Engineering",
+      "CHEP102 — Engineering Materials",
+      "ENGT104 — Physical Chemistry for Engineers",
+      "ENGT102 — Engineering Mathematics I",
+      "ENGT101 — Engineering Drawing",
+      "INSY101 — Introduction to Computer and Computer Application",
+      "COSK101 — Basic Communication Skills",
+      "ENGT103 — Principles of Electrical Engineering"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "CHEP121 — Chemical Engineering Thermodynamics I",
+      "CHEP122 — Organic Chemistry for Engineers",
+      "CHEP126 — Workshop Practice",
+      "ENGT124 — Engineering Mathematics II",
+      "INSY103 — Principles of Computer Programming",
+      "COSK121 — Business Communication",
+      "ENGM121 — Material Science"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "CHEP211 — Transport Phenomena",
+      "CHEP212 — Chemical Engineering Thermodynamics II",
+      "CHEP213 — Mass Transfer Processes 1A",
+      "ENGM213 — Minerals Processing I",
+      "CHEP214 — Reactor Analysis and Design I",
+      "SSGS217 — Gender Studies",
+      "ENGT214 — Engineering Mathematics III"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "CHEP221 — Computational Methods for Chemical Engineers",
+      "CHEP222 — Fluid Flow I",
+      "CHEP223 — Mass Transfer Processes 1B",
+      "CHEP224 — Reactor Analysis and Design II",
+      "CHEP225 — Instrumentation, Process Dynamics and Control",
+      "CHEP226 — Analytical Chemistry",
+      "ENGT224 — Engineering Mathematics IV",
+      "ENGM225 — Hydrometallurgy I"
+    ]
+  },
+  {
+    name: "Level 3, Semester 1",
+    modules: [
+      "CHEP311 — Heat Transfer",
+      "CHEP312 — Fluid Flow II",
+      "CHEP313 — Fluid-Solid Systems 1",
+      "CHEP314 — Reactor Analysis and Design III",
+      "CHEP315 — Separation Processes 1",
+      "CHEP316 — Chemical Engineering Laboratory",
+      "ENGT314 — Engineering Mathematics V",
+      "ENGM311 — Pyrometallurgy I"
+    ]
+  },
+  {
+    name: "Level 3, Semester 2",
+    modules: [
+      "CHEP321 — Plant and Equipment Design",
+      "CHEP322 — Biochemical Engineering",
+      "CHEP323 — Fluid-Solid Systems 2",
+      "CHEP324 — Health and Safety in Industrial Plants",
+      "CHEP325 — Separation Processes 2",
+      "ASTA217 — Research Methods",
+      "ENGM323 — Minerals Processing 2"
+    ]
+  },
+  {
+    name: "Level 4, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "CHEP401 — Work-Related Learning Report",
+      "CHEP402 — Academic Supervisor's Assessment",
+      "CHEP403 — Industrial Supervisor's Assessment"
+    ]
+  },
+  {
+    name: "Level 5, Semester 1",
+    modules: [
+      "CHEP511 — Process Dynamics, Modeling and Control 1",
+      "CHEP512 — Environmental Process Engineering 1",
+      "CHEP513 — Project Management",
+      "CHEP514 — Process Management, Economics and Optimization",
+      "CHEP501 — Chemical Engineering Design Project"
+    ]
+  },
+  {
+    name: "Level 5, Semester 2",
+    modules: [
+      "CHEP521 — Process Dynamics, Modeling and Control 2",
+      "CHEP522 — Environmental Process Engineering 2",
+      "CHEP502 — Research Project",
+      "ENGM521 — Technological Entrepreneurship",
+      "Elective option — CHEP523: Polymer Technology",
+      "Elective option — CHEP524: Purification Processes",
+      "Elective option — CHEP525: Fuels and Energy",
+      "Elective option — CHEP526: Nanotechnology"
+    ]
+  }
+]
+  },
+  {
+        name: "Bachelor of Engineering in Metallurgy Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "ENGT101 — Engineering Drawing",
+      "COSK101 — Basic Communication Skills",
+      "ENGT104 — Physical Chemistry for Engineers",
+      "ENGT102 — Engineering Mathematics I",
+      "INSY102 — Introduction to Computer and Computer Applications",
+      "ENGT103 — Principles of Electrical Engineering"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "COSK121 — Business Communication Skills",
+      "INSY103 — Principles of Computer Programming",
+      "ENGT124 — Engineering Mathematics II",
+      "CHEP126 — Workshop Practice",
+      "ENGM121 — Materials Science",
+      "ENGT123 — Engineering Mechanics",
+      "ENGM101 — Introduction to Mining and Metallurgy"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "SSGS217 — Gender Studies",
+      "ENGM211 — Heat Transfer and Mass Transfer",
+      "ENGM212 — Materials Technology",
+      "ENGM213 — Mineral Processing I",
+      "ENGT214 — Engineering Mathematics III",
+      "ENGP215 — Fundamentals of Geology"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "ENGM221 — Physical Metallurgy I",
+      "ENGM222 — Metallurgical Laboratory Techniques",
+      "ENGM223 — Metallurgical Thermodynamics",
+      "CHEP226 — Analytical Chemistry",
+      "ENGT224 — Engineering Mathematics IV",
+      "ENGM225 — Hydrometallurgy I",
+      "ENGT225 — Fluid Mechanics"
+    ]
+  },
+  {
+    name: "Level 3, Semester 1",
+    modules: [
+      "ENGM311 — Pyrometallurgy (Non-Ferrous) I",
+      "ENGM312 — Metallurgical Process Design, Simulation and Control",
+      "ENGM313 — Foundry Technology",
+      "ENGT314 — Engineering Mathematics V",
+      "ENGM315 — Hydrometallurgy II",
+      "ENGM316 — Metallurgy of Iron and Steel"
+    ]
+  },
+  {
+    name: "Level 3, Semester 2",
+    modules: [
+      "ENGM321 — Physical Metallurgy II",
+      "ENGM322 — Pyrometallurgy (Non-Ferrous) II",
+      "ENGM323 — Mineral Processing II",
+      "ENGM324 — Metallurgical Process Design II",
+      "ENGT321 — Research Methods",
+      "ENGP324 — Health, Safety and Ethics in Industrial Plants"
+    ]
+  },
+  {
+    name: "Level 4, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "ENGM401 — Work-Related Learning Report",
+      "ENGM402 — Academic Supervisor's Report",
+      "ENGM403 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 5, Semester 1",
+    modules: [
+      "ENGM511 — Corrosion Engineering",
+      "ENGM512 — Welding Technology",
+      "ENGM513 — Metallurgical Plant Design Project",
+      "ENGM514 — Fuels and Energy",
+      "ENGP515 — Marketing and Transportation of Minerals",
+      "CHEP513 — Project Management"
+    ]
+  },
+  {
+    name: "Level 5, Semester 2",
+    modules: [
+      "ENGM521 — Refractories and Slag Chemistry",
+      "ENGM522 — Failure Analysis of Engineering Materials",
+      "ENGP521 — Technological Entrepreneurship",
+      "ENGM524 — Dissertation"
+    ]
+  }
+]
+  },
+  {
+        name: "Bachelor of Engineering in Mining and Mineral Processing Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "ENGT101 — Engineering Drawing",
+      "COSK101 — Basic Communication Skills",
+      "CHEP101 — Principles of Chemical Engineering",
+      "ENGT102 — Engineering Mathematics I",
+      "ENGT103 — Principles of Electrical Engineering",
+      "INSY101 — Introduction to Computers and Computer Applications"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "INSY103 — Principles to Computer Programming (as listed by MSUAS)",
+      "COSK121 — Business Communication",
+      "ENGP121 — Introduction to Mining and Metallurgy",
+      "ENGT124 — Engineering Mathematics II",
+      "ENGT123 — Engineering Mechanics",
+      "CHEP121 — Chemical Engineering Thermodynamics I",
+      "CHEP126 — Workshop Practice"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "SSGS217 — Gender Studies",
+      "ENGM213 — Mineral Processing I",
+      "ENGT212 — Strength of Materials",
+      "ENGP215 — Fundamentals of Geology",
+      "ENGT214 — Engineering Mathematics III",
+      "ENGP216 — Underground Mining",
+      "ENGP217 — Mine Machinery and Materials Handling"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "ENGT221 — Electrical Machines",
+      "ENGT224 — Engineering Mathematics IV",
+      "ENGP222 — Mine Survey and GIS",
+      "ENGP223 — Surface Mining",
+      "ENGT225 — Fluid Mechanics",
+      "ENGT226 — Mechanical Engineering Design"
+    ]
+  },
+  {
+    name: "Level 3, Semester 1",
+    modules: [
+      "ENGP311 — Rock Mechanics",
+      "ENGP312 — Mining Geology",
+      "ENGP313 — Engineering Economics",
+      "ENGP316 — Operations Research",
+      "ENGM312 — Metallurgical Process Design",
+      "ENGT314 — Engineering Mathematics V",
+      "ENGP315 — Mineral Processing Laboratory"
+    ]
+  },
+  {
+    name: "Level 3, Semester 2",
+    modules: [
+      "ENGM323 — Mineral Processing II",
+      "ENGP322 — Mine Ventilation",
+      "ASTA217 — Research Methods",
+      "ENGP326 — Rock Breaking",
+      "ENGP324 — Mine Health, Safety and Risk Management",
+      "ENGP325 — Coal Mining Methods",
+      "ENGP327 — Mining Law"
+    ]
+  },
+  {
+    name: "Level 4, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "ENGP401 — Student Work Related Learning Report",
+      "ENGP402 — Academic Supervisor's Report",
+      "ENGP404 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 5, Semester 1",
+    modules: [
+      "ENGP511 — Mineral Economics",
+      "ENGM511 — Material Science",
+      "ENGP512 — Engineering Geology",
+      "ENGM513 — Metallurgical Plant Design Project",
+      "ENGP514 — Computer Application and Numerical Methods in Mining",
+      "ENGP515 — Mine Design and Planning",
+      "ENGP516 — Marketing and Transportation of Minerals"
+    ]
+  },
+  {
+    name: "Level 5, Semester 2",
+    modules: [
+      "ENGP521 — Technological Entrepreneurship",
+      "ENGP522 — Dissertation",
+      "ENGP524 — Environmental Management and Risk Assessment",
+      "ENGP523 — Mine Management"
+    ]
+  }
+]
+  },
+    ],
+  },
+  {
+    faculty: "Applied Sciences & Technology",
+    programmes: [
+      {
+        name: "Bachelor of Science Honours Degree in Applied Statistics",
+        levels: [
+          {
+            name: "Level 1, Semester 1",
+            modules: [
+              "ASTA101 — Introduction to Statistics",
+              "ASTA102 — Calculus I",
+              "ASTA103 — Linear Mathematics I",
+              "ASTA104 — Probability Theory I",
+              "COSK101 — Basic Communication Skills",
+              "INSY101 — Introduction to Computers and Computer Applications"
+            ]
+          },
+          {
+            name: "Level 1, Semester 2",
+            modules: [
+              "ASTA121 — Statistical Computing I",
+              "ASTA122 — Regression and ANOVA I",
+              "ASTA123 — Mathematical Discourse and Structures",
+              "ASTA124 — Probability Theory II",
+              "ASTA125 — Statistical Inference I",
+              "INSY103 — Principles of Computer Programming",
+              "COSK121 — Business Communication"
+            ]
+          },
+          {
+            name: "Level 2, Semester 1",
+            modules: [
+              "ASTA212 — Design and Design Issues I",
+              "ASTA213 — Hypothesis Testing Techniques",
+              "ASTA217 — Research Methods",
+              "SSGS217 — Gender Studies",
+              "Elective option — ASTA214 Ordinary Differential Equations",
+              "Elective option — ASTA215 Statistical Computing II",
+              "Elective option — ASTA216 Calculus II"
+            ]
+          },
+          {
+            name: "Level 2, Semester 2",
+            modules: [
+              "ASTA221 — Survey Techniques",
+              "ASTA222 — Time Series Analysis",
+              "ASTA223 — Estimation Techniques",
+              "ASTA224 — Operations Research",
+              "BMAN221 — Entrepreneurship Theory and Practice",
+              "Elective option — ASTA225 Statistical Inference II",
+              "Elective option — ASTA226 Quality Management Systems",
+              "Elective option — ASTA227 Computational Techniques and R Programming"
+            ]
+          },
+          {
+            name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+            modules: [
+              "ASTA301 — Work-Related Learning Report",
+              "ASTA302 — Academic Supervisor’s Report",
+              "ASTA303 — Employer’s Assessment Report"
+            ]
+          },
+          {
+            name: "Level 4, Semester 1",
+            modules: [
+              "ASTA411 — Linear Models",
+              "ASTA412 — Multivariate Analysis",
+              "ASTA413 — Quality Control Techniques",
+              "Elective option — ASTA414 Optimisation and Mathematical Programming",
+              "Elective option — ASTA415 Applications of Probability Theory",
+              "Elective option — ASTA416 Statistical Inference III",
+              "Elective option — ASTA417 Design and Design Issues II",
+              "Elective option — ASTA418 Stochastic Processes",
+              "Elective option — ASTA419 Computational Statistics and Database Management System"
+            ]
+          },
+          {
+            name: "Level 4, Semester 2",
+            modules: [
+              "ASTA421 — Econometrics",
+              "ASTA422 — Demography",
+              "ASTA423 — Regression and ANOVA II",
+              "ASTA424 — Survival Models",
+              "ASTA470 — Dissertation",
+              "Elective option — ASTA425 Statistical Ecology",
+              "Elective option — ASTA427 Mathematical Modelling",
+              "Elective option — ASTA428 Actuarial Processes",
+              "Elective option — ASTA429 Numerical Methods"
+            ]
+          }
+        ]
+        },
+      {
+        name: "Bachelor of Science Honours Degree in Information Systems Audit",
+        levels: [
+  {
+    name: "Level 1 (Year 1), Semester 1",
+    modules: [
+      "ISA111 — Introduction to Information System",
+      "ISA112 — Fundamentals of Computer Hardware and Software",
+      "ISA113 — Principles of Accounting and Finance",
+      "ISA114 — Business Mathematics and Statistics",
+      "COSK121 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 1 (Year 1), Semester 2",
+    modules: [
+      "ISA121 — Programming Concepts and Problem Solving",
+      "ISA122 — Computer Networks and Data Communications",
+      "ISA123 — Professional Ethics and Corporate Governance",
+      "ISA124 — Introduction to Information Security",
+      "INSY124 — Technovation"
+    ]
+  },
+  {
+    name: "Level 2 (Year 2), Semester 3",
+    modules: [
+      "ISA211 — Database Systems and SQL",
+      "ISA212 — Operating Systems and Server Administration",
+      "ISA213 — Auditing Principles and Practices",
+      "ISA214 — Information Security and Risk Management",
+      "SSG217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2 (Year 2), Semester 4",
+    modules: [
+      "ISA221 — IT Governance and Compliance",
+      "ISA222 — Enterprise Systems",
+      "ISA223 — Research Methods and Report Writing",
+      "ISA224 — Information System Audit and Assurance",
+      "ISA225 — Enterprise Team Project"
+    ]
+  },
+  {
+    name: "Level 3 (Year 3), Semesters 5 and 6 — Work-Related Learning",
+    modules: [
+      "ISA321 — Work-Related Learning Student Report",
+      "ISA322 — Work-Related Learning Student Project",
+      "ISA323 — Work-Related Learning Employer Report"
+    ]
+  },
+  {
+    name: "Level 4 (Year 4), Semester 7",
+    modules: [
+      "ISA411 — Advanced IT Risk Assessment and Control Frameworks",
+      "ISA412 — Cybersecurity Management and Digital Forensics",
+      "ISA413 — Data Protection and Privacy Governance",
+      "ISA414 — Cloud and Data Centre Auditing",
+      "Elective 1"
+    ]
+  },
+  {
+    name: "Level 4 (Year 4), Semester 8",
+    modules: [
+      "ISA421 — Emerging Technologies in Audit",
+      "ISA422 — Business Continuity and Disaster Recovery Planning",
+      "ISA423 — Capstone Project / Dissertation",
+      "Elective 2"
+    ]
+  }
+]
+      },
+      {
+        name: "Bachelor of Science Honours Degree in Information Systems",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "INSY102 — Introduction to Computer Science",
+      "INSY103 — Principles of Computer Programming",
+      "INSY104 — Computer Organisation and Architecture",
+      "ACCT102 — Financial Accounting for Business 1A",
+      "BMAN101 — Principles of Management",
+      "COSK101 — Basic Communication Skills",
+      "LANP101 — Portuguese"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "BMAN122 — Business Communication",
+      "ACCT123 — Financial Accounting for Business 1B",
+      "BCOS123 — Operating Systems",
+      "INSY121 — Computational Mathematics for Information Systems",
+      "INSY122 — Database Systems",
+      "INSY123 — Systems Analysis and Design",
+      "INSY124 — Technovation",
+      "BCOS122 — Data Structures and Algorithms"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "BCOS211 — Web Technologies and Mobile Application Development",
+      "ASTA217 — Research Methods",
+      "INSY211 — Psychology of Computing",
+      "INSY212 — Management Information Systems",
+      "INSY213 — Digital Financial Services",
+      "INSY214 — Visual Programming",
+      "SSGS217 — Introduction to Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BCOS221 — Data Communications and Computer Networks",
+      "BCOS213 — Software Engineering",
+      "BCOS223 — Object Oriented Methodologies",
+      "INSY221 — E-Business",
+      "INSY222 — ICT Project Management",
+      "INSY223 — Enterprise Team Project",
+      "BMAN211 — Entrepreneurship Theory and Practice"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "INSY321 — Work Related Learning Student Report",
+      "INSY322 — Work Related Learning Project",
+      "INSY323 — Work Related Learning Supervisor Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "INSY411 — Human and Computer Interaction",
+      "INSY412 — Data Warehousing and Data Mining",
+      "INSY413 — Enterprise Architecture",
+      "INSY414 — Cyber Law and Professional Ethics",
+      "INSY415 — Information Systems Security Audit and Control",
+      "INSY416 — Blockchain Technologies"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BCOS422 — Artificial Intelligence",
+      "INSY421 — Business Intelligence and Big Data Analytics",
+      "INSY422 — Mobile Computing",
+      "INSY423 — Information Systems Governance",
+      "INSY424 — Capstone Innovation Project"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science in Business Intelligence and Data Analytics Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "BIDA111 — Fundamentals of Business Intelligence",
+      "CSFC111 — Introduction to Information Security",
+      "INSY103 — Principles of Computer Programming",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "COSK101 — Basic Communication Skills",
+      "BMAN102 — Quantitative Analysis for Business",
+      "LANP101 — Portuguese"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "BIDA121 — Data Warehousing",
+      "BIDA122 — Data Management",
+      "INSY122 — Database Systems",
+      "BCOS122 — Data Structures and Algorithms",
+      "ASTA101 — Introduction to Statistics",
+      "ASTA103 — Linear Mathematics",
+      "COSK122 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "BIDA211 — Data Mining",
+      "INSY213 — Digital Financial Services",
+      "BIDA212 — Machine Learning",
+      "BIDA213 — Data Processing and Visualisation",
+      "BCOS211 — Web Technologies and Mobile Application Development",
+      "INSY212 — Management Information Systems",
+      "AEDT213 — Econometrics",
+      "SSG217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BIDA221 — Data Analytics",
+      "BIDA222 — Deep Learning",
+      "BCOS223 — Object Oriented Methodologies",
+      "INSY222 — ICT Project Management",
+      "BCOS221 — Data Communications and Computer Networks",
+      "ASTA217 — Research Methods",
+      "INSY221 — E-Business",
+      "BIDA223 — Time Series and Forecasting"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "BIDA321 — Work Related Learning Student Report",
+      "BIDA322 — Work Related Learning Project",
+      "BIDA323 — Work Related Learning Supervisor Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "BIDA411 — Optimisation in Analytics",
+      "BIDA412 — Pattern Recognition",
+      "INSY411 — Human and Computer Interaction",
+      "BIDA413 — Web Mining Analytics",
+      "BCSE422 — Digital Image Processing",
+      "INSY416 — Blockchain Technologies"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BIDA421 — Decision Support Systems",
+      "BIDA422 — Business Intelligence",
+      "BIDA423 — Artificial Intelligence and Expert Systems",
+      "CSFC422 — Enterprise Risk Management and Compliance",
+      "INSY424 — Capstone Innovation Project"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science in Computer Science Honours Degree",
+       levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "BCOS111 — Introduction to Computer Science",
+      "BCOS112 — Principles of Computer Programming",
+      "BCOS113 — Computer Organisation and Architecture",
+      "BCOS114 — Fundamentals of Digital Electronics",
+      "BCOS115 — Mathematical Foundation to Computer Science",
+      "ASTA110 — Calculus",
+      "COSK101 — Basic Communication Skills",
+      "ASTA101 — Introduction to Statistics"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "BCOS121 — Discrete Mathematics",
+      "BCOS122 — Data Structures and Algorithms",
+      "BCOS123 — Operating Systems",
+      "INSY122 — Database Systems",
+      "INSY123 — Systems Analysis and Design",
+      "INSY124 — Technovation",
+      "LANP102 — Portuguese",
+      "COSK121 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "BCOS211 — Web Technologies and Mobile Application Development",
+      "BCOS212 — Theory of Computation",
+      "BCOS213 — Software Engineering",
+      "INSY211 — Psychology of Computing",
+      "INSY212 — Management Information Systems",
+      "INSY213 — Visual Programming",
+      "ASTA217 — Research Methods",
+      "SSGS217 — Introduction to Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BCOS221 — Data Communications and Computer Networks",
+      "BCOS222 — Microprocessor and Embedded Systems",
+      "BCOS223 — Object Oriented Methodologies",
+      "BCOS224 — Design and Analysis of Algorithms",
+      "BCOS225 — Software Project Management",
+      "BCOS226 — Enterprise Team Project",
+      "BMAN221 — Entrepreneurship Theory and Practice"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "BCOS321 — Work Related Learning Student Report",
+      "BCOS322 — Work Related Learning Project",
+      "BCOS323 — Work Related Learning Mentor's Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "BCOS411 — Simulation and Modeling",
+      "BCOS412 — Computer Security",
+      "BCOS413 — Computer Graphics",
+      "INSY411 — Human and Computer Interaction",
+      "INSY413 — Data Warehousing and Data Mining",
+      "INSY414 — Cyber Law and Professional Ethics"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BCOS421 — Digital Signal Processing",
+      "BCOS422 — Artificial Intelligence",
+      "BCOS423 — Parallel Distributed Computing",
+      "BCOS424 — Compiler Design",
+      "BCOS425 — Capstone Innovation Project"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science in Computer Systems Engineering Honours Degree",
+  levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "BCSE111 — Introduction to Computer Engineering",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "BCOS112 — Principles of Computer Programming",
+      "BCOS113 — Computer Organisation and Architecture",
+      "BCSE112 — Electrical and Electronic Principles",
+      "BCOS114 — Fundamentals of Digital Electronics",
+      "ASTA103 — Linear Mathematics I",
+      "COSK101 — Basic Communication Skills"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "BCOS121 — Discrete Mathematics",
+      "BCOS122 — Data Structures and Algorithms",
+      "BCOS123 — Operating Systems",
+      "INSY122 — Database Systems",
+      "INSY124 — Technovation",
+      "COSK121 — Business Communication",
+      "LANP102 — Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "BCSE211 — Materials Chemistry for Engineers",
+      "BCOS212 — Theory of Computation",
+      "BCOS213 — Software Engineering",
+      "INSY211 — Psychology of Computing",
+      "BCSE212 — Linear Circuits",
+      "ASTA217 — Research Methods",
+      "SSGS217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BCOS221 — Data Communications and Computer Networks",
+      "ASTA101 — Introduction to Statistics",
+      "BCSE221 — Prototyping Laboratory",
+      "BCOS224 — Design and Analysis of Algorithms",
+      "INSY222 — ICT Project Management",
+      "BCSE226 — Enterprise Team Project",
+      "BMAN211 — Entrepreneurship Theory and Practice"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "BCSE321 — Work Related Learning Student Report",
+      "BCSE322 — Work Related Learning Project",
+      "BCSE323 — Work Related Learning Employer's Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "BCSE411 — Fabrication Technologies for Micro and Nano Devices",
+      "BCOS412 — Computer Security",
+      "BCOS422 — Artificial Intelligence",
+      "BCSE413 — Microprocessors & Microcontrollers Systems",
+      "BCOS423 — Parallel and Distributed Computing",
+      "BCSE415 — Engineering Design with Embedded Systems",
+      "BCSE416 — Cyber Law and Professional Ethics"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BCOS421 — Digital Signal Processing",
+      "BCSE421 — Control Systems Engineering",
+      "BCSE422 — Image Processing",
+      "BCOS424 — Compiler Design",
+      "BCSE425 — Capstone Innovation Project"
+    ]
+  }
+  ]
+},
+{
+  name: "Bachelor of Science in Cyber Security and Forensic Computing Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "CSFC111 — Introduction to Information Security",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "INSY103 — Principles of Computer Programming",
+      "INSY104 — Computer Organisation and Architecture",
+      "BCOS121 — Discrete Mathematics",
+      "COSK101 — Basic Communication Skills",
+      "LANP101 — Portuguese"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "INSY122 — Database Systems",
+      "CSFC122 — Internet of Things and Operational Technology Security",
+      "CSFC124 — Payment Systems and Fraud",
+      "BCOS122 — Data Structures and Algorithms",
+      "BCOS123 — Operating Systems",
+      "COSK121 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "CSFC211 — Cryptography and Security",
+      "CSFC212 — Secure Coding",
+      "CSFC213 — Systems Administration and Security",
+      "CSFC214 — Mobile Forensics",
+      "INSY213 — Digital Financial Services",
+      "BCOS211 — Web Technologies and Mobile Application Development",
+      "CSFC215 — Secure Software Management",
+      "SSGS217 — Introduction to Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "CSFC221 — Ethical Hacking",
+      "CSFC222 — Malware Analysis",
+      "CSFC223 — Analysis and Development of Crypto Systems",
+      "INSY222 — ICT Project Management",
+      "CSFC226 — Security Policies and Implementation",
+      "CSFC227 — Forensic Investigation and Incidence Response",
+      "BCOS221 — Data Communications and Computer Networks",
+      "ASTA217 — Research Methods"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "CSFC321 — Work Related Learning Student Report",
+      "CSFC322 — Work Related Learning Academic Supervisor's Report",
+      "CSFC323 — Work Related Learning Employer's Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "CSFC411 — Digital Forensics",
+      "CSFC412 — Industrial Control Systems Security",
+      "INSY413 — Enterprise Architecture",
+      "INSY415 — Information Systems Security Audit and Control",
+      "INSY416 — Blockchain Technologies",
+      "CSFC417 — Mobile and Wireless Security",
+      "CSFC418 — Secure Electronic Commerce"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BCOS422 — Artificial Intelligence",
+      "CSFC422 — Enterprise Risk Management and Compliance",
+      "CSFC424 — Virtualization Cloud Security",
+      "CSFC425 — Penetration Testing and Vulnerability Assessment",
+      "BCSE422 — Digital Image Processing",
+      "CSFC426 — Dissertation"
+    ]
+  }
+]
+},
+  ],
+},
+ {
+    faculty: "Agricultural Science and Environmental Sustainability",
+    programmes: [
+      {
+        name: "Bachelor of Science Honours Degree in Crop Production and Post-harvest Technology",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "COSK101 — Basic Communication Skills",
+      "ASTA101 — Introduction to Statistics",
+      "AEDT104 — Agricultural Practice",
+      "CSCS111 — Principles of Crop Production",
+      "CSCS112 — Plant Physiology and Anatomy",
+      "CSPP121 — Introduction to Microbiology",
+      "INSY102 — Introduction to Computers and Computer Applications",
+      "AEDT101 — Introduction to Agricultural Economics"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "AEDT125 — Introduction to Soil Science",
+      "CSCS122 — Agricultural Biochemistry",
+      "CSMM121 — Principles of Irrigation, Soil and Water Management",
+      "AEDT105 — Crop Production",
+      "COSK121 — Business Communication",
+      "CSHO122 — Principles of Horticulture Production"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "CSMM211 — GIS and Remote Sensing in Agriculture",
+      "CSMM212 — Agricultural Mechanisation and Buildings",
+      "CSCS213 — Biology, Ecology and Management of Plant Insect Pests",
+      "CSPP211 — Basic Food Engineering",
+      "SSGS217 — Gender Studies",
+      "LANP101 / LANP112 — French or Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "CSPP221 — Food Chemistry and Analysis",
+      "CSCS222 — Crop Physiology and Ecology",
+      "CSCS223 — Biology, Ecology and Management of Plant Pathogens",
+      "CSCS224 — Weed Biology, Ecology and Management",
+      "CSCS226 — Genetics",
+      "CSCS225 — Statistical Methods and Experimental Designs",
+      "Elective option — CSCS227: Soil and Climatic Factors",
+      "Elective option — CSCS228: Maturity Indices of Crop Products"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "CSPP300 — Work Related Learning Report",
+      "CSPP301 — Academic Supervisor's Report",
+      "CSPP302 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "CSPP411 — Quality Assurance and Food Laws",
+      "CSPP412 — Crop Storage and Processing",
+      "Elective option — CSPP413: Food Toxicology",
+      "Elective option — CSPP414: Food Processing and Preservation Technology",
+      "Elective option — CSCS221: Extension and Communication"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "CSPP421 — Food Microbiology and Biotechnology",
+      "AEDT223 — Agribusiness and Entrepreneurship",
+      "CSPP400 — Research Project",
+      "Elective option — AEDT422: Agricultural Value Chain Management",
+      "Elective option — AEDT427: Land Use and Natural Resource Use and Evaluation"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science Honours Degree in Crop Science",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "COSK101 — Basic Communication Skills",
+      "ASTA101 — Introduction to Statistics",
+      "AEDT104 — Agricultural Practice",
+      "CSCS111 — Principles of Crop Production",
+      "CSCS112 — Plant Physiology and Anatomy",
+      "CSPP121 — Introduction to Microbiology",
+      "INSY102 — Introduction to Computers and Computer Applications",
+      "AEDT101 — Introduction to Agricultural Economics",
+      "AEDT105 — Annual Crop Production"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "AEDT105 — Introduction to Soil Science (code as listed by MSUAS)",
+      "CSCS121 — Agricultural Biochemistry",
+      "CSMM121 — Principles of Irrigation and Water Conservation",
+      "CSCS122 — Molecular Biology",
+      "COSK121 — Business Communication",
+      "CSHO120 — Introduction to Entomology and Parasitology",
+      "CSCS123 — Principles of Genetics"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "CSCS210 — Perennial Crop Production",
+      "CSMM211 — GIS and Remote Sensing in Agriculture",
+      "CSMM212 — Agricultural Mechanisation and Buildings",
+      "CSCS212 — Soil Management and Crop Nutrition",
+      "CSCS213 — Biology, Ecology and Management of Plant Insect Pests",
+      "CSCS214 — Crop Improvement",
+      "SSGS217 — Gender Studies",
+      "LANP101 / LANP112 — French or Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "CSCS221 — Agricultural Extension and Communication",
+      "CSCS222 — Crop Physiology and Ecology",
+      "CSCS223 — Biology, Ecology and Management of Plant Pathogens",
+      "CSCS224 — Weed Biology, Ecology and Management",
+      "SSHR223 — Occupational Health, Safety and Wellness",
+      "CSCS225 — Statistical Methods and Experimental Design"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "CSCS300 — Work Related Learning Report",
+      "CSCS301 — Academic Supervisor's Report",
+      "CSCS302 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "CSCS411 — Seed Science and Technology",
+      "CSPP412 — Crop Storage and Processing",
+      "AEDT214 — Heritage-Based Natural Resource Management",
+      "CSCS412 — Climate Change, Agriculture and Food Security",
+      "CSCS414 — Grass and Forage Production"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "CSCS422 — Sustainable Crop Production Systems",
+      "CSCS423 — Plant Biotechnology",
+      "BMAN221 — Agribusiness and Entrepreneurship",
+      "CSCS400 — Research Project"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science in Horticulture Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "COSK101 — Basic Communication Skills",
+      "ASTA101 — Introduction to Statistics",
+      "AEDT104 — Agricultural Practice",
+      "AEDT105 — Annual Crop Production",
+      "CSCS112 — Plant Physiology and Anatomy",
+      "CSPP121 — Introduction to Microbiology",
+      "INSY102 — Introduction to Computers and Computer Applications",
+      "AEDT101 — Introduction to Agricultural Economics"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "AEDT125 — Introduction to Soil Science",
+      "CSCS122 — Agricultural Biochemistry",
+      "CSMM121 — Principles of Irrigation and Water Conservation",
+      "CSCS122 — Molecular Biology (same code as another listed module)",
+      "CSCS124 — Olericulture and Mushroom Production",
+      "COSK121 — Business Communication",
+      "CSHO120 — Introduction to Entomology and Parasitology",
+      "CSHO122 — Principles of Horticulture Production",
+      "CSCS123 — Principles of Genetics"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "CSHO211 — Fruit and Nut Production",
+      "CSMM211 — GIS and Remote Sensing in Agriculture",
+      "CSMM212 — Agricultural Mechanisation and Buildings",
+      "CSCS212 — Soil Management and Crop Nutrition",
+      "CSCS213 — Biology, Ecology and Management of Plant Insect Pests",
+      "CSCS214 — Crop Improvement",
+      "SSGS217 — Gender Studies",
+      "LANP101 / LANP112 — French or Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "CSCS221 — Agricultural Extension and Communication",
+      "CSCS222 — Crop Physiology and Ecology",
+      "CSCS223 — Biology, Ecology and Management of Plant Pathogens",
+      "CSCS224 — Weed Biology, Ecology and Management",
+      "SSHR223 — Occupational Health, Safety and Wellness",
+      "CSCS225 — Statistical Methods and Experimental Design"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "CSHO300 — Work Related Learning Report",
+      "CSHO301 — Academic Supervisor's Report",
+      "CSHO302 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "CSCS411 — Seed Science and Technology",
+      "CSPP412 — Crop Storage and Processing",
+      "AEDT214 — Heritage-Based Natural Resource Management",
+      "CSHO412 — Floriculture, Landscape and Herbal Horticulture",
+      "CSMK412 — Farm Data Management",
+      "CSHO413 — Plant Propagation, Nursery and Management"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BMAN221 — Agribusiness and Entrepreneurship",
+      "CSHO424 — Pesticides and the Environment",
+      "AEDT215 — Value Addition in Agriculture",
+      "CSHO400 — Research Project"
+    ]
+  }
+]
+},
+    ],
+  },
+  {
+    faculty: "Agricultural Science and Environmental Sustainability",
+    programmes: [
+      {
+        name: "Bachelor of Science in Agricultural Economics and Development Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "AEDT101 — Introduction to Agricultural Economics",
+      "AEDT102 — Introduction to Agricultural Planning and Development",
+      "AEDT104 — Agricultural Practice",
+      "AEDT105 — Annual Crop Production",
+      "COSK101 — Basic Communication Skills",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "BMAN102 — Quantitative Analysis for Business"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "AEDT103 — Introduction to Agricultural Sociology",
+      "AEDT121 — Micro-Economics for Agriculture",
+      "AEDT122 — Macro-Economics for Agriculture",
+      "AEDT123 — Financial Analysis and Management in Agriculture",
+      "AEDT124 — Principles of Animal Production",
+      "AEDT125 — Introduction to Soil Science",
+      "COSK122 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "AEDT211 — Applied Agricultural Production Economics",
+      "AEDT212 — Farm Management",
+      "AEDT213 — Econometrics I",
+      "AEDT214 — Heritage-Based Natural Resource Management",
+      "AEDT215 — Value Addition in Agriculture",
+      "AEDT216 — Applied Welfare Economics and Public Policy",
+      "LANP101 / LANP102 — Portuguese or French",
+      "SSGS217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "AEDT221 — Intermediate Micro-economics for Agriculture",
+      "AEDT222 — Intermediate Macro-economics for Agriculture",
+      "AEDT223 — Agribusiness and Entrepreneurship",
+      "BMAN421 — Project Management",
+      "ASTA217 — Research Methods",
+      "AEDT225 — Practices in Basic Farm Management and Mechanization",
+      "Elective option — AEDT226: Institutional Economics",
+      "Elective option — AEDT227: Mathematics for Agricultural Economics"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "AEDT301 — Work Related Learning Report",
+      "AEDT302 — Academic Supervisor's Assessment Report",
+      "AEDT303 — Mentor Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "AEDT411 — Agricultural Price Analysis and Forecasting",
+      "AEDT412 — Agricultural Trade",
+      "AEDT413 — Agricultural Policy",
+      "MARK101 — Principles of Marketing",
+      "Elective option — AEDT414: Econometrics II",
+      "Elective option — AEDT415: Quantitative Analysis",
+      "Elective option — AEDT416: Game Theory",
+      "Elective option — AEDT416: Application of Linear Models"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "AEDT421 — Agricultural Law",
+      "AEDT422 — Agricultural Value Chain Management",
+      "AEDT423 — Environmental Economics",
+      "AEDT424 — Rural Development Planning",
+      "AEDT425 — Research Project",
+      "Elective option — AEDT426: Social Policy Development and Analysis",
+      "Elective option — AEDT427: Land Use and Natural Resource Use and Evaluation"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science Honours Degree in Agricultural Engineering",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "CHEP126 — Workshop Processes and Practice",
+      "ENGT101 — Engineering Drawing",
+      "AEDT104 — Agricultural Practice",
+      "ENGT102 — Engineering Mathematics I",
+      "COSK101 — Basic Communication Skills",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "AENG114 — Electrical and Electronic Principles"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "INSY102 — Principles of Computer Programming",
+      "ENGT124 — Engineering Mathematics II",
+      "AENG122 — Theory of Mechanisms and Machines",
+      "ENGT123 — Engineering Mechanics",
+      "AENG124 — Hydraulics and Fluid Mechanics",
+      "LANP101 / LANP102 — Portuguese or French",
+      "COSK121 — Business Communication"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "AENG211 — Agricultural Production",
+      "AENG212 — Engineering Materials",
+      "AENG213 — Manufacturing Processes",
+      "AENG215 — Engineering Design Principles",
+      "ENGT214 — Engineering Mathematics III",
+      "SSGS217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "AENG221 — Soil Mechanics and Tillage",
+      "ENGT212 — Strength of Materials",
+      "ENGT221 — Electrical Machines",
+      "AENG224 — Thermodynamics and Heat Transfer",
+      "AENG225 — Engineering Surveying",
+      "AENG214 — Theory of Structures"
+    ]
+  },
+  {
+    name: "Level 3, Semester 1",
+    modules: [
+      "AENG311 — Agricultural Engineering Design",
+      "AENG312 — Agricultural Structures",
+      "AENG313 — Agricultural Power",
+      "AEDT212 — Farm Management",
+      "ASTA217 — Research Methods"
+    ]
+  },
+  {
+    name: "Level 3, Semester 2",
+    modules: [
+      "AENG321 — Hydrology",
+      "AENG322 — Irrigation and Drainage Engineering",
+      "AENG323 — Farm Mechanisation and Machinery",
+      "AENG324 — Land Use Planning and Reclamation",
+      "AENG325 — Agricultural Processing Engineering"
+    ]
+  },
+  {
+    name: "Level 4, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "AENG410 — Work Related Learning Report",
+      "AENG402 — Academic Supervisor's Assessment Report",
+      "AENG403 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 5, Semester 1",
+    modules: [
+      "AENG511 — Instrumentation and Control Systems",
+      "AENG512 — Soil and Water Conservation Engineering",
+      "AENG513 — Precision Agriculture",
+      "Elective option — AENG514: Pollution Management",
+      "Elective option — AENG515: Bio processing of Bio products"
+    ]
+  },
+  {
+    name: "Level 5, Semester 2",
+    modules: [
+      "AENG521 — Agricultural Engineering Project Planning and Management",
+      "AENG522 — Water Resource Management",
+      "ENGP521 — Technological Entrepreneurship",
+      "AENG324 — Post-Harvest Engineering",
+      "AENG524 — Research/Design and Make Project"
+    ]
+  }
+]
+},
+    ],
+  },
+  {
+    faculty: "Agribusiness Management",
+    programmes: [
+      {
+        name: "Bachelor of Accounting Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "ACCT101 — Financial Accounting IA",
+      "ECON101 — Principles of Microeconomics",
+      "BMAN101 — Principles of Management",
+      "BMAN103 — Quantitative Analysis for Business",
+      "COSK101 — Basic Communication Skills",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "MARK101 — Principles of Marketing"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "ACCT121 — Financial Accounting IB",
+      "COSK121 — Business Communication",
+      "ACCT122 — Practical Accounting Data Processing",
+      "BMAN121 — Commercial Law",
+      "SSHR211 — Organisational Behaviour",
+      "LAMP102 — Basic Portuguese",
+      "ECON121 — Principles of Macroeconomics"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "ACCT211 — Financial Accounting IIA",
+      "ACCT212 — Tax Law and Practice I",
+      "ACCT213 — Audit Skills",
+      "ACCT214 — Management and Cost Accounting",
+      "BMAN213 — Company Law and Practice",
+      "BMAN211 — Entrepreneurship Theory and Practice",
+      "SSGS217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "ACCT221 — Financial Accounting IIB",
+      "ACCT222 — Tax Law and Practice II",
+      "ACCT223 — Audit Process",
+      "ACCT224 — Corporate Governance",
+      "ACCT225 — Corporate Finance",
+      "ASTA217 — Research Methods",
+      "INSY213 — Digital Financial Services"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "ACCT311 — Work-Related Learning Report",
+      "ACCT312 — Academic Supervisor's Report",
+      "ACCT313 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "ACCT411 — Financial Reporting",
+      "ACCT413 — Management and Cost Accounting II",
+      "ACCT414 — Public Sector Accounting I",
+      "ACCT415 — Financial Management",
+      "ACCT416 — Accounting Information Systems",
+      "Elective option — ACCT417: Public Sector Structures and Functions",
+      "Elective option — ACCT418: Tax Secretaryship",
+      "Elective option — ACCT419: Enterprise Risk Management"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "ACCT421 — Advanced Financial Accounting",
+      "ACCT422 — Dissertation",
+      "ACCT423 — Strategic Management Accounting",
+      "ACCT424 — Public Sector Accounting II",
+      "ACCT425 — Advanced Auditing",
+      "Elective option — ACCT426: Public Financial Management",
+      "Elective option — ACCT427: Tax Audit and Planning",
+      "Elective option — ACCT428: Managing the Internal Audit Activity"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Commerce (Honours) Business Management",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "BMAN101 — Principles of Management",
+      "MARK101 — Principles of Marketing",
+      "ECON102 — Principles of Economics",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "COSK101 — Basic Communication Skills",
+      "ACCT102 — Financial Accounting for Business 1A",
+      "ASTA101 — Introduction to Statistics"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "BMAN121 — Commercial Law",
+      "BMAN122 — Business Communication",
+      "BMAN123 — Business Ethics",
+      "INSY221 — E-Business",
+      "ACCT123 — Financial Accounting for Business 1B",
+      "LANP102 — Basic Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "BMAN211 — Entrepreneurship Theory and Practice",
+      "MARK211 — Sales and Marketing Management",
+      "SSGS217 — Gender Studies",
+      "BMAN212 — Company Law and Practice",
+      "SSHR125 — Principles of Human Management",
+      "SSHR101 — Industrial Relations"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BMAN221 — Family and Small Business Management",
+      "ACCT225 — Corporate Finance",
+      "ACCT419 — Enterprise Risk Management",
+      "ACCT122 — Practical Accounting Data Processing",
+      "BMAN225 — Innovation and New Product Development",
+      "Research Methods — module code not shown on MSUAS page"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "BMAN331 — Work Related Learning Continuous Assessment",
+      "BMAN332 — Work Related Learning Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "BMAN411 — Production and Operations Management",
+      "BMAN412 — Change Management",
+      "ACCT214 — Management and Cost Accounting",
+      "BMAN414 — Strategic Business Leadership",
+      "ACCT — Audit Skills (code incomplete on MSUAS page)",
+      "SSHR211 — Organisational Behaviour"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BMAN421 — Project Management",
+      "ACCT224 — Corporate Governance",
+      "BMAN423 — Strategic Management",
+      "BMAN424 — International Business Management",
+      "BMAN425 — Quality Management",
+      "BMAN426 — Research Project"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Commerce Tourism and Hospitality Management Honours Degree",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "BMAN101 — Principles of Management",
+      "THMA101 — Introduction to the Tourism and Hospitality Industry",
+      "THMA102 — Zimbabwe Tourism Geography",
+      "COSK101 — Basic Communication Skills",
+      "ECON101 — Principles of Economics",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "ACCT102 — Financial Accounting for Business 1A",
+      "LANP101 — Portuguese 1"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "THMA121 — Tourism Operations Management",
+      "THMA122 — Principles of Tourism and Hospitality Marketing",
+      "THMA123 — Rooms Division Management",
+      "ACCT122 — Financial Accounting for Business 1B",
+      "THMA124 — Food and Beverage Management",
+      "BMAN122 — Business Communication",
+      "LANP112 — Portuguese 2"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "LANP211 — French 1",
+      "THMA212 — Food Preparation",
+      "THMA213 — Hotel and Institutional Management",
+      "THMA214 — Regional and International Tourism",
+      "THMA215 — Hospitality and Tourism Law",
+      "THMA216 — Global Distribution Systems",
+      "SSGS217 — Gender Studies"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "BMAN221 — Entrepreneurship",
+      "THMA221 — Digital Tourism and Hospitality Marketing",
+      "THMA222 — Food and Beverage Production and Services",
+      "LANP226 — French 2",
+      "ASATA217 — Research Methods",
+      "SSHR122 — Principles of Human Resources Management"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "THMA311 — Work Related Learning Report",
+      "THMA312 — Academic Supervisor's Report",
+      "THMA313 — Employer's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "THMA413 — Mountain Tourism Planning",
+      "THMA411 — MICE Management",
+      "THMA412 — International Hospitality Management",
+      "THMA415 — Sustainable Tourism Management",
+      "THMA416 — Hospitality and Tourism Innovation Project"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "BMAN422 — Corporate Governance",
+      "THMA421 — Tourism Transport Logistics",
+      "THMA422 — Dissertation — Research Project",
+      "BMAN415 — Quality Management",
+      "BMAN412 — Strategic Management"
+    ]
+  }
+]
+},
+    ],
+  },
+  {
+    faculty: "Applied Social Sciences",
+    programmes: [
+      {
+        name: "Bachelor of Science in Human Resource Management Honours Degree",
+        levels: [
+          {
+            name: "Level 1, Semester 1",
+            modules: [
+              "BMAN101 — Principles of Management",
+              "BMAN103 — Quantitative Analysis for Business",
+              "COSK101 — Basic Communication Skills",
+              "INSY101 — Introduction to Computers and Computer Applications"
+            ]
+          },
+          {
+            name: "Level 1, Semester 2",
+            modules: [
+              "MARK122 — Title not shown in the MSUAS timetable",
+              "ACCT123 — Title not shown in the MSUAS timetable",
+              "SSHR125 — Principles of Human Resource Management"
+            ]
+          },
+          {
+            name: "Level 2, Semester 1",
+            modules: [
+              "SSHR213 — Title not shown in the MSUAS timetable",
+              "SSHR215 — Title not shown in the MSUAS timetable",
+              "SSHR216 — Training Development"
+            ]
+          },
+          {
+            name: "Level 2, Semester 2",
+            modules: [
+              "ASTA217 — Research Methods",
+              "SSGS217 — Gender Studies",
+              "SSHR221 — Title not shown in the MSUAS timetable",
+              "SSHR223 — Title not shown in the MSUAS timetable",
+              "ACCT224 — Corporate Governance"
+            ]
+          },
+          {
+            name: "Level 3 — curriculum details not published",
+            modules: [
+            ]
+          },
+          {
+            name: "Level 4, Semester 1 — curriculum details not published",
+            modules: [
+            ]
+          },
+          {
+            name: "Level 4, Semester 2",
+            modules: [
+              "SSHR422 — Title not shown in the MSUAS timetable",
+              "SSHR423 — Title not shown in the MSUAS timetable",
+              "SSHR425 — Title not shown in the MSUAS timetable"
+            ]
+          }
+        ]
+        },
+      {
+        name: "Bachelor of Science Honours Degree in Organisational and Industrial Psychology",
+        levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "SYPS101 — Introduction to Psychology",
+      "SYPS102 — Principles of Industrial Psychology",
+      "SYPS103 — Introduction to Social Psychology",
+      "SYPS104 — Basic Sign Language and Vocabulary",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "COSK101 — Basic Communication Skills",
+      "BMAN102 — Quantitative Analysis for Business"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "SYPS121 — Ethics and Professional Practice",
+      "SYSP122 — Human Resource Psychology",
+      "SYPS123 — Psychology of Work",
+      "SSPS123 — Sign Language Structure",
+      "SYSP124 — Introduction to Organizational Psychology",
+      "COSK121 — Business Communication",
+      "SYPS125 — Psychology of Industrial Relations"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "SYPS211 — Organisational Psychology",
+      "SYSP212 — Motivation and Personality in Work Context",
+      "BMAN211 — Entrepreneurship Theory and Practice",
+      "SYSP233 — Workgroup Dynamics",
+      "SSHR216 — Training Development",
+      "SSGS217 — Gender Studies",
+      "LANP102 — Portuguese"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "SYSP221 — Occupational Health and Safety Management",
+      "SYSP222 — Counselling Skills and Processes",
+      "SYSP223 — Psychology and Law",
+      "ASTA217 — Research Methods",
+      "SYSP2234 — Human Diversity"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "SYSP311 — Academic Supervisor's Assessment Report",
+      "SYPS312 — Industrial Supervisor Assessment Report",
+      "SYPS313 — Work Related Learning Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "SYSP411 — Performance Development",
+      "SYSP412 — Career Psychology",
+      "SYSP413 — Human Capital Development",
+      "SYSP414 — Human Factors and Ergonomics",
+      "BMAN423 — Strategic Management"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "SYSP421 — Emotional Intelligence",
+      "SYSP422 — Psychometrics",
+      "SYSP423 — Dissertation",
+      "SYSP424 — Organisational Design and Development",
+      "ACCT224 — Business Ethics and Corporate Governance"
+    ]
+  }
+]
+},
+{
+  name: "Bachelor of Science in Psychology Honours Degree",
+   levels: [
+  {
+    name: "Level 1, Semester 1",
+    modules: [
+      "SSPS101 — Introduction to Psychology",
+      "SSPS102 — Introduction to Social Psychology",
+      "SSPS103 — Psychology, Concepts, Methods and Applications",
+      "INSY101 — Introduction to Computers and Computer Applications",
+      "COSK101 — Basic Communication Skills",
+      "BMAN102 — Quantitative Analysis for Business",
+      "SSPS104 — Basic Sign Language Vocabulary"
+    ]
+  },
+  {
+    name: "Level 1, Semester 2",
+    modules: [
+      "SSPS121 — Ethics and Professional Practice",
+      "SSPS122 — Contemporary and Applied Social Psychology",
+      "SSHR127 — Industrial Sociology",
+      "SSHR125 — Principles of Human Resource Management",
+      "SSHR101 — Industrial Relations",
+      "BMAN122 — Business Communication",
+      "SSPS123 — Sign Language Structure"
+    ]
+  },
+  {
+    name: "Level 2, Semester 1",
+    modules: [
+      "SSPS211 — Psychobiology",
+      "SSPS212 — Child Development",
+      "SSPS213 — Principles of Learning",
+      "SSPS215 — Adolescence and Adulthood",
+      "BMAN221 — Entrepreneurship Theory and Practice",
+      "SSGS217 — Gender Studies",
+      "LANP101 / LANP102 — Portuguese or French"
+    ]
+  },
+  {
+    name: "Level 2, Semester 2",
+    modules: [
+      "SSPS221 — Personality",
+      "SSPS222 — Cognitive Psychology",
+      "SSPS223 — Human Diversity",
+      "SSPS224 — Psychology and Law",
+      "SSPS225 — Psychology and Sports",
+      "ASTA217 — Research Methods"
+    ]
+  },
+  {
+    name: "Level 3, Semesters 1 and 2 — Work-Related Learning",
+    modules: [
+      "SSPS321 — Academic Supervisor's Assessment Report",
+      "SSPS322 — Work-Related Learning Report",
+      "SSPS323 — Mentor's Assessment Report"
+    ]
+  },
+  {
+    name: "Level 4, Semester 1",
+    modules: [
+      "SSPS411 — Psychometrics",
+      "SSPS412 — Psychopathology",
+      "SSPS413 — Organisational Psychology",
+      "SSPS414 — Educational Psychology",
+      "SSPS415 — Community Psychology"
+    ]
+  },
+  {
+    name: "Level 4, Semester 2",
+    modules: [
+      "SSPS421 — Principles of Psychotherapy",
+      "SSPS422 — Contemporary-Critical Psychology",
+      "SSPS423 — Health Psychology",
+      "SSPS424 — Neuropsychology",
+      "SSPS425 — Dissertation"
+    ]
+}
+   ]
+}
+        ]
+    }
+];

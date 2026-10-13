@@ -1,0 +1,110 @@
+const facultySelect = document.querySelector("#faculty-select");
+const programmeSelect = document.querySelector("#programme-select");
+const levelSelect = document.querySelector("#level-select");
+const moduleList = document.querySelector("#module-list");
+const moduleMessage = document.querySelector("#module-message");
+const lessonContent = document.querySelector("#lesson-content");
+
+function addOption(dropdown, value, label) {
+  const option = document.createElement("option");
+  option.value = value;
+  option.textContent = label;
+  dropdown.appendChild(option);
+}
+
+function resetDropdown(dropdown, instruction) {
+  dropdown.replaceChildren();
+  addOption(dropdown, "", instruction);
+  dropdown.disabled = true;
+}
+
+function getProgrammesForFaculty(facultyName) {
+  return courseCatalog
+    .filter(entry => entry.faculty === facultyName)
+    .flatMap(entry => entry.programmes);
+}
+
+function getSelectedProgramme() {
+  return getProgrammesForFaculty(facultySelect.value).find(
+    programme => programme.name === programmeSelect.value
+  );
+}
+
+const faculties = courseCatalog.map(entry => entry.faculty);
+
+faculties.forEach(faculty => {
+  addOption(facultySelect, faculty, faculty);
+});
+
+facultySelect.addEventListener("change", () => {
+  resetDropdown(programmeSelect, "Choose a programme");
+  resetDropdown(levelSelect, "Choose a level and semester");
+  moduleList.replaceChildren();
+  moduleMessage.textContent = "Choose a programme and level to see its modules.";
+  lessonContent.replaceChildren();
+
+  if (!facultySelect.value) return;
+
+  const programmes = getProgrammesForFaculty(facultySelect.value);
+
+  programmes.forEach(programme => {
+    addOption(programmeSelect, programme.name, programme.name);
+  });
+
+  programmeSelect.disabled = false;
+});
+
+programmeSelect.addEventListener("change", () => {
+  resetDropdown(levelSelect, "Choose a level and semester");
+  moduleList.replaceChildren();
+  moduleMessage.textContent = "Choose a level and semester to see its modules.";
+  lessonContent.replaceChildren();
+
+  if (!programmeSelect.value) return;
+
+  const programme = getSelectedProgramme();
+
+  programme.levels.forEach(level => {
+    addOption(levelSelect, level.name, level.name);
+  });
+
+  levelSelect.disabled = false;
+});
+
+levelSelect.addEventListener("change", () => {
+  moduleList.replaceChildren();
+  lessonContent.replaceChildren();
+
+  if (!levelSelect.value) {
+    moduleMessage.textContent = "Choose a level and semester to see its modules.";
+    return;
+  }
+
+  const programme = getSelectedProgramme();
+  const level = programme.levels.find(
+    item => item.name === levelSelect.value
+  );
+
+  moduleMessage.textContent = "Select a module to continue.";
+
+  level.modules.forEach(moduleName => {
+    const moduleButton = document.createElement("button");
+    moduleButton.type = "button";
+    moduleButton.textContent = moduleName;
+
+    moduleButton.addEventListener("click", () => {
+      lessonContent.replaceChildren();
+
+      const heading = document.createElement("h3");
+      heading.textContent = moduleName;
+
+      const note = document.createElement("p");
+      note.textContent =
+        "The detailed lesson notes and understanding quiz for this module will go here.";
+
+      lessonContent.append(heading, note);
+    });
+
+    moduleList.appendChild(moduleButton);
+  });
+});

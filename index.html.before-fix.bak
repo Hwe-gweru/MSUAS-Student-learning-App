@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A learning app for MSUAS students.">
+  <title>Manicaland State University of Applied Sciences Student Learning App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="site-title">MSUAS Learn</a>
+    <p>Learn your course, one topic at a time.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Welcome to your learning space</h1>
+      <p>
+        Choose your department, programme, and level to find your modules.
+        Each module will include detailed lessons and a quiz.
+      </p>
+    </section>
+
+    <section aria-labelledby="course-choice-heading">
+      <h2 id="course-choice-heading">Find your course</h2>
+
+      <label for="faculty-select">Faculty</label>
+<select id="faculty-select">
+  <option value="">Choose a faculty</option>
+</select>
+
+      <label for="programme-select">Programme</label>
+      <select id="programme-select" disabled>
+        <option value="">Choose a programme</option>
+      </select>
+
+      <label for="level-select">Level and semester</label>
+      <select id="level-select" disabled>
+        <option value="">Choose a level and semester</option>
+      </select>
+    </section>
+
+    <section id="module-section" aria-labelledby="module-heading">
+      <h2 id="module-heading">Your modules</h2>
+      <p id="module-message">
+        Choose a department, programme, and level to see your modules.
+      </p>
+      <div id="module-list"></div>
+    </section>
+
+    <section id="lesson-section" aria-labelledby="lesson-heading">
+      <h2 id="lesson-heading">Course materials</h2>
+      <div id="lesson-content">
+        <p>Select a module to open its lessons.</p>
+      </div>
+    </section>
+
+    <section id="help-section" aria-labelledby="help-heading">
+      <h2 id="help-heading">Need help understanding something?</h2>
+      <p>
+        Tell us which part of the lesson is confusing, and we’ll help you
+        work through it.
+      </p>
+
+      <label for="help-question">What would you like help with?</label>
+      <textarea
+        id="help-question"
+        rows="4"
+        placeholder="For example: I don't understand how this concept works."
+      ></textarea>
+
+      <button id="ask-help-button" type="button">Ask for help</button>
+      <p id="help-response" aria-live="polite"></p>
+    </section>
+
+    <section id="quiz-section" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Check your understanding</h2>
+      <p>The questions for the selected module will appear here after its lessons.</p>
+      <div id="quiz-content"></div>
+      <p id="quiz-result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Learning support for Manicaland State University of Applied Sciences students.</p>
+  </footer>
+
+  <script src="course-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
